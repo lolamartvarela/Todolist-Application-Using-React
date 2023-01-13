@@ -4,11 +4,7 @@ const Home = () => {
   const [Datos, setDatos] = useState("");
   const [save, setSave] = useState([]);
 
-  function handleDatos(e) {
-    setDatos(e.target.value);
-  }
 
-  // 4. procesamos todos los Datos del formulario
   function enviarDatos(e) {
     e.preventDefault();
     setSave(save.concat(Datos));
@@ -25,8 +21,9 @@ const Home = () => {
 
   return (
     <>
+    <div className="container-fluid border border-primary col-md-8 mt-4">
       <div>
-        <p className="fw-light fs-1 d-flex  justify-content-center col-md-4 offset-md-4 mt-4">
+        <p className="fst-italic fw-light fs-1 d-flex  justify-content-center col-md-4 offset-md-4 mt-4">
           todos
         </p>
       </div>
@@ -69,7 +66,7 @@ const Home = () => {
         
         </ul>
         </div>
-      
+        </div>
     </>
   );
 };
