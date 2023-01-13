@@ -58,12 +58,11 @@ const Home = () => {
             <li className="list-group-item" key={index}>
               {item}
               <button
-                className="btn btn-outline-secondary"
+                className="btn"
                 type="button"
-                id="eliminar"
                 onClick={() => eliminarDatos(index)}
               >
-                x
+                <i className="fas fa-trash-alt" />
               </button>
             </li>
           ))}{" "}
